@@ -18,16 +18,15 @@ const Booking = () => {
 
   const navigate = useNavigate();
 
-  // Mutation function to create a booking
   const createBooking = async (credentials) => {
     const response = await fetch(`${apiBase}/booking`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        // No need for Authorization header since token is in the cookies
+        
       },
       body: JSON.stringify(credentials),
-      credentials: "include", // Ensures cookies are sent with the request
+      credentials: "include", 
     });
 
     if (!response.ok) {
