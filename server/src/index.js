@@ -34,7 +34,7 @@ app.post("/auth/login", loginUser);
 app.post("/booking", verifyToken, createBooking);
 
 // Serve React app from dist
-app.use(express.static(path.join(__dirname, "client", "dist")));
+app.use(express.static(path.join(__dirname, "../client", "dist")));
 
 // React catch-all for SPA routes
 app.get("*", (req, res) => {
