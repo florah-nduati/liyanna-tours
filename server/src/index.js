@@ -8,6 +8,11 @@ import errorHandler from "./middleware/errorHandler.js";
 import validateUserInformation from "./middleware/validateUserInformation.js";
 import verifyToken from "./middleware/verifyToken.js";
 import path from "path";
+import { fileURLToPath } from "url";
+
+// Resolve __dirname for ES modules
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
