@@ -42,34 +42,11 @@ const Navbar = () => {
         </li>
         {isAuthenticated ? (
           <>
+
             <li>
-              <Link to="/packages">Tour Packages</Link>
+              <Link to="/booking">Booking</Link>
             </li>
-            <li>
-              <Link to="/about">About Us</Link>
-            </li>
-            <li>
-              <Link to="/gallery">Gallery</Link>
-            </li>
-            <li>
-              <Link to="/contact">Contact</Link>
-            </li>
-            <li className="dropdown">
-              <Link to="#" className="dropdown-btn">
-                More
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link to="/faqs">FAQs</Link>
-                </li>
-                <li>
-                  <Link to="/booking">Booking</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-              </ul>
-            </li>
+
             <li>
               <button className="logout-button" onClick={handleLogout}>
                 Logout
@@ -81,11 +58,37 @@ const Navbar = () => {
           </>
         ) : (
           <>
-            <li>
-              <Link to="/login">Login</Link>
+                      <li>
+            <Link to="/packages">Tour Packages</Link>
             </li>
             <li>
-              <Link to="/sign-up">Sign Up</Link>
+              <Link to="/about">About Us</Link>
+            </li>
+            <li>
+              <Link to="/gallery">Gallery</Link>
+            </li>
+            <li className="dropdown">
+              <Link to="#" className="dropdown-btn">
+                More
+              </Link>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link to="/faqs">FAQs</Link>
+                </li>
+                 <li>
+              <Link to="/contact">Contact</Link>
+                </li>
+
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <Link to="/login"></Link>
+            </li>
+            <li>
+              <Link to="/sign-up"></Link>
             </li>
           </>
         )}
