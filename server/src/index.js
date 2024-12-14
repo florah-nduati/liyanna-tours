@@ -33,12 +33,12 @@ app.post("/users", validateUserInformation, addUser);
 app.post("/auth/login", loginUser);
 app.post("/booking", verifyToken, createBooking);
 
-// Serve React app from dist
+// Serve React app from dist (adjusted path)
 app.use(express.static(path.join(__dirname, "../client", "dist")));
 
 // React catch-all for SPA routes
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+  res.sendFile(path.join(__dirname, "../client", "dist", "index.html"));
 });
 
 // Error handling middleware
