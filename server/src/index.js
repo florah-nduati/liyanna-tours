@@ -14,7 +14,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: ["http://localhost:5173"],
+    origin: "https://liyanna-tours-3.onrender.com",
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
   }),
