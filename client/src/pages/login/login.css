@@ -1,0 +1,190 @@
+/* General Styling */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the login form */
+.login-container {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
+    url(../../assets/desert.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+@media (max-width: 768px) {
+  .login-container {
+    padding: 30px;
+    max-width: 90%;
+  }
+}
+
+/* Login Form Style */
+.login-form {
+  padding: 40px 50px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+/* Heading Style */
+h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 25px;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #7f5aff;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Input Labels */
+.input-label {
+  font-size: 14px;
+  color: #7f5aff;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* Enhanced Input Fields */
+.input-group input {
+  padding: 16px 20px;
+  border-radius: 30px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  color: #333;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 100%;
+}
+
+/* Input Focus */
+.input-group input:focus {
+  outline: none;
+  border-color: #7f5aff;
+  box-shadow: 0 4px 10px rgba(127, 90, 255, 0.4);
+}
+
+/* Placeholder Styling */
+.input-group input::placeholder {
+  color: #bbb;
+}
+
+.input-group input:focus::placeholder {
+  color: transparent;
+}
+
+/* Input Icon */
+.input-group .input-icon {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: #7f5aff;
+  font-size: 18px;
+}
+
+/* Submit Button */
+#loginBtn {
+  padding: 16px 30px;
+  background-color: #7f5aff;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  width: 100%;
+  margin-top: 20px;
+}
+
+#loginBtn:hover {
+  background-color: #6b47e1;
+  transform: translateY(-2px);
+}
+
+#loginBtn:disabled {
+  background-color: #d3b8ff;
+  cursor: not-allowed;
+}
+
+/* Error or Success Messages */
+.message {
+  font-size: 14px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.message.red {
+  color: red;
+}
+
+.message.green {
+  color: green;
+}
+
+/* Signup Prompt */
+.signup-prompt {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
+
+.signup-prompt a {
+  color: #7f5aff;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.signup-prompt a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Styling for Mobile */
+@media (max-width: 480px) {
+  .login-container {
+    padding: 20px;
+    max-width: 100%;
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .input-group input {
+    padding: 14px 18px;
+  }
+
+  #loginBtn {
+    padding: 14px 25px;
+  }
+}

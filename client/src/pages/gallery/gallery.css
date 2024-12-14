@@ -1,0 +1,109 @@
+.gallery {
+  padding: 2rem;
+  background: linear-gradient(to bottom, #f4f0fc, #37034d);
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #8547e0;
+  margin-bottom: 2rem;
+}
+
+/* Hexagonal Layout for Images */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(250px, 1fr)
+  ); /* Large card size */
+  gap: 1.5rem;
+  justify-items: center;
+  position: relative;
+}
+
+.gallery-card {
+  position: relative;
+  overflow: hidden;
+  clip-path: polygon(
+    50% 0%,
+    100% 20%,
+    100% 80%,
+    50% 100%,
+    0% 80%,
+    0% 20%
+  ); /* Large hexagonal shape */
+  border-radius: 12px;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  opacity: 0; /* Initially hidden for scroll effect */
+  transform: translateY(20px); /* Starting position */
+}
+
+.gallery-card.in-view {
+  opacity: 1; /* Fade in when in view */
+  transform: translateY(0);
+}
+
+.gallery-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 1.5s ease; /* Smooth enlarge effect */
+  transform: scale(1); /* Default size */
+}
+
+.gallery-card.in-view .gallery-image {
+  transform: scale(1.2); /* Enlarge image on scroll into view */
+}
+
+.gallery-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  padding: 1rem;
+  text-align: center;
+  transition: opacity 1s ease; /* Smooth overlay appearance */
+}
+
+.gallery-card.in-view .gallery-overlay {
+  opacity: 1; /* Show overlay on scroll into view */
+}
+
+.gallery-overlay h2 {
+  font-size: 1.5rem;
+  color: black;
+  margin-bottom: 0.5rem;
+}
+
+.gallery-overlay p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* Scroll-triggered Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.gallery-card.in-view {
+  animation: fadeIn 0.7s ease forwards; /* Scroll-triggered fade-in */
+}

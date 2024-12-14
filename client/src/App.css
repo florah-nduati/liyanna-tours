@@ -1,0 +1,84 @@
+/* General Reset */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Josefin Sans", serif;
+  background: linear-gradient(
+    to bottom,
+    #c6bdf0,
+    #a589e9,
+    #8547e0,
+    #37034d,
+    #37034d
+  );
+  color: black;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+/* Main Container */
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+}
+
+/* Default Link Styling */
+a {
+  color: #8547e0;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #f4a261;
+}
+
+/* Buttons */
+button {
+  background-color: #8547e0;
+  color: white;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #a589e9;
+}
+
+/* Sections */
+section {
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #333;
+}
+
+h1 {
+  color: #8547e0;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+/* Utilities */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}

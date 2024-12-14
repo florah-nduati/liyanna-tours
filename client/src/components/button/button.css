@@ -1,0 +1,32 @@
+.btn {
+  padding: 0.7rem 1.4rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+}
+
+.btn-primary {
+  background-color: #8547e0;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #a589e9;
+}
+
+.btn-secondary {
+  background-color: #f4a261;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #e76f51;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}

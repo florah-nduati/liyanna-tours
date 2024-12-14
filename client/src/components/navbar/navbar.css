@@ -1,0 +1,310 @@
+/* Navbar Container */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    #37034d,
+    #8547e0
+  ); /* Gradient background */
+  padding: 1rem 2rem;
+  color: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+/* Logo Styling */
+.navbar-logo a {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo a:hover {
+  transform: scale(1.1);
+  text-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
+}
+
+/* Navbar Links Container */
+.navbar-links {
+  display: flex;
+  list-style: none;
+}
+
+.navbar-links li {
+  margin: 0 1rem;
+  position: relative;
+}
+
+/* Navbar Links */
+.navbar-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.navbar-links a:hover {
+  color: #f4a261;
+  transform: translateY(-3px);
+  text-shadow: 0px 2px 8px rgba(244, 162, 97, 0.6);
+}
+
+/* Dropdown Menu */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #a589e9;
+  list-style: none;
+  padding: 0.5rem 0;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  z-index: 10;
+  animation: fadeIn 0.3s ease forwards;
+}
+
+.dropdown-menu li {
+  padding: 0.5rem 1.5rem;
+}
+
+.dropdown-menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+.dropdown-menu a:hover {
+  color: #f4a261;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Call-to-Action Button */
+.navbar-cta {
+  background-color: #f4a261;
+  border: none;
+  padding: 0.7rem 1.2rem;
+  color: #8547e0;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 25px;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-cta:hover {
+  background-color: #e76f51;
+  transform: scale(1.1);
+}
+
+.navbar-heading {
+  font-size: 1.2rem;
+  color: #ffffff;
+  margin-top: 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-logo img {
+  width: 60px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.9);
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.navbar-logo img:hover {
+  transform: scale(1.1);
+  box-shadow: 0px 4px 10px rgba(235, 200, 3, 0.6);
+}
+
+.hamburger {
+  display: none;
+  font-size: 1.8rem;
+  color: black;
+  cursor: pointer;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}
+
+/* Navbar Links for Mobile with Helix Effect */
+@media (max-width: 768px) {
+  /* Navbar container adjustments for small screens */
+  .navbar {
+    flex-direction: row; /* Horizontal alignment */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 1rem; /* Reduced padding for compact design */
+  }
+
+  /* Logo and Name Styling */
+  .navbar-logo {
+    flex: 1; /* Push other elements away */
+    display: flex;
+    align-items: flex-start;
+  }
+
+  .navbar-logo img {
+    margin-right: 0.5rem; /* Space between logo and text */
+    width: 50px;
+    height: 50px;
+  }
+
+  .navbar-logo a {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+
+  /* Centering the Bookmark Button */
+  .navbar-cta {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%); /* Center the button */
+    z-index: 1050; /* Ensure it's above other elements */
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    background-color: #f4a261;
+    color: #8547e0;
+    border-radius: 25px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .navbar-cta:hover {
+    background-color: #e76f51;
+  }
+
+  /* Hamburger Menu */
+  .hamburger {
+    flex: 1; /* Push it to the opposite end */
+    display: block;
+    font-size: 1.8rem;
+    color: white;
+    text-align: right;
+    cursor: pointer;
+    z-index: 1100;
+  }
+
+  /* Navbar Links */
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 4rem;
+    right: 1.5rem;
+    width: auto;
+    background: rgba(0, 0, 0, 0.9);
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .navbar-links.show {
+    display: flex;
+  }
+
+  .navbar-links li {
+    margin: 0.5rem 0;
+    opacity: 0;
+    transform: rotateY(90deg) scale(0.5);
+    animation: helixAnimation 0.6s ease-out forwards;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .navbar-links li:nth-child(1) {
+    animation-delay: 0.1s;
+    color: black;
+    background-color: #f28b82;
+  }
+  .navbar-links li:nth-child(2) {
+    animation-delay: 0.2s;
+    color: black;
+    background-color: #fbbc04;
+  }
+  .navbar-links li:nth-child(3) {
+    animation-delay: 0.3s;
+    color: black;
+    background-color: #34a853;
+  }
+  .navbar-links li:nth-child(4) {
+    animation-delay: 0.4s;
+    color: black;
+    background-color: #4285f4;
+  }
+  .navbar-links li:nth-child(5) {
+    animation-delay: 0.5s;
+    color: black;
+    background-color: #a142f4;
+  }
+  .navbar-links li:nth-child(6) {
+    animation-delay: 0.6s;
+    color: black;
+    background-color: #f18701;
+  }
+
+  /* Helix Animation */
+  @keyframes helixAnimation {
+    0% {
+      opacity: 0;
+      transform: rotateY(90deg) scale(0.5);
+    }
+    50% {
+      opacity: 0.5;
+      transform: rotateY(45deg) scale(0.8);
+    }
+    100% {
+      opacity: 1;
+      transform: rotateY(0deg) scale(1);
+    }
+  }
+}
+
+/* Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,87 @@
+/* Hero Section Styling */
+.hero {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.hero-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.5); /* Add darker overlay for contrast */
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+  z-index: 1;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  color: #e67e22;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.hero-btn {
+  background-color: #ff9800;
+  color: #fff;
+  padding: 0.8rem 1.5rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #e67e22;
+  color: black;
+}
+
+/* Navigation Buttons */
+.hero-navigation {
+  position: absolute;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.nav-btn {
+  width: 1px;
+  height: 1px;
+  border: none;
+  border-radius: 20%;
+  background: #ccc;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.nav-btn.active {
+  background: purple;
+}
+
+.nav-btn:hover {
+  background: purple;
+}

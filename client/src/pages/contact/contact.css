@@ -1,0 +1,167 @@
+/* General Styling */
+.contact {
+  padding: 3rem;
+  background: linear-gradient(
+    to bottom,
+    #ffffff,
+    #c8bedf,
+    #ae8ae6,
+    #a727dd,
+    #61028a
+  );
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.contact-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #6c5ce7;
+  animation: fadeIn 1s ease-out;
+}
+
+/* Contact Info Section */
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+}
+
+.contact-icon {
+  font-size: 2rem;
+  margin-right: 0.8rem;
+  color: #6c5ce7;
+}
+
+.contact-link {
+  color: #333;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.contact-link:hover {
+  color: #6c5ce7;
+}
+
+.social-links a {
+  margin: 0 10px;
+  color: #333;
+  font-size: 1.8rem;
+  transition:
+    transform 0.3s,
+    color 0.3s;
+}
+
+.social-links a:hover {
+  color: #6c5ce7;
+  transform: scale(1.2);
+}
+
+/* Inquiry Form */
+.form-section {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.form-title {
+  font-size: 2rem;
+  color: #6c5ce7;
+  margin-bottom: 1.5rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.form-group {
+  width: 100%;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0.3rem;
+}
+
+.form-group textarea {
+  height: 150px;
+}
+
+.submit-btn {
+  background-color: #6c5ce7;
+  color: white;
+  border: none;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #3d3b9e;
+}
+
+/* Google Map */
+.map-section {
+  text-align: center;
+}
+
+.map-container {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: column;
+  }
+
+  .contact-item {
+    font-size: 1.1rem;
+  }
+
+  .social-links a {
+    font-size: 1.5rem;
+  }
+
+  .contact-form {
+    width: 100%;
+    gap: 1rem;
+  }
+}

@@ -1,0 +1,112 @@
+/* Container Styles */
+.faq-container {
+  padding: 3rem 2rem;
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.faq-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #6c5ce7;
+  animation: fadeIn 1s ease-out;
+}
+
+/* FAQ List Styles */
+.faq-list {
+  margin-bottom: 3rem;
+}
+
+.faq-item {
+  background-color: white;
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.faq-question {
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  transition: color 0.3s;
+}
+
+.faq-question:hover {
+  color: #6c5ce7;
+}
+
+.faq-icon {
+  margin-right: 10px;
+  font-size: 1.5rem;
+}
+
+.faq-answer {
+  font-size: 1rem;
+  margin-top: 1rem;
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.faq-answer.show {
+  display: block;
+  opacity: 1;
+}
+
+/* Policy Section Styles */
+/* Terms and Conditions Styles */
+.policy-section h3 {
+  font-size: 1.8rem;
+  color: #6c5ce7;
+  margin-bottom: 1rem;
+}
+
+.policy-section h4 {
+  font-size: 1.4rem;
+  color: #333;
+  margin-top: 1rem;
+}
+
+.policy-section p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.policy-section a {
+  color: #6c5ce7;
+  text-decoration: none;
+}
+
+.policy-section a:hover {
+  text-decoration: underline;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .faq-title {
+    font-size: 2rem;
+  }
+
+  .faq-list {
+    margin-bottom: 1.5rem;
+  }
+}

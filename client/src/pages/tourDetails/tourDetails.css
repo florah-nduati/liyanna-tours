@@ -1,0 +1,35 @@
+.tour-details {
+  padding: 2rem;
+  background: #fdfdfd;
+  color: #333;
+}
+
+.tour-image {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.tour-title {
+  font-size: 2.5rem;
+  color: #8547e0;
+  margin-bottom: 1rem;
+}
+
+.tour-description {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.itinerary {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.itinerary li {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+  border-bottom: 1px solid #ddd;
+}
