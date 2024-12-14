@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 import "./navbar.css";
 import useUserStore from "../../../store/userStore";
@@ -20,9 +20,9 @@ const Navbar = () => {
     <nav className="navbar">
       {/* Logo Section */}
       <div className="navbar-logo">
-        <a href="/">
+        <Link to="/">
           <img src={logo} alt="Liyanna Luxury Tours Logo" />
-        </a>
+        </Link>
         <h1 className="navbar-heading">Liyanna Luxury Tours</h1>
       </div>
 
@@ -38,54 +38,54 @@ const Navbar = () => {
       {/* Navbar Links */}
       <ul className={`navbar-links ${isOpen ? "show" : ""}`}>
         <li>
-          <a href="/">Home</a>
+          <Link to="/">Home</Link>
         </li>
         {isAuthenticated ? (
           <>
             <li>
-              <a href="/packages">Tour Packages</a>
+              <Link to="/packages">Tour Packages</Link>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="/gallery">Gallery</a>
+              <Link to="/gallery">Gallery</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
             <li className="dropdown">
-              <a href="/more" className="dropdown-btn">
+              <Link to="#" className="dropdown-btn">
                 More
-              </a>
+              </Link>
               <ul className="dropdown-menu">
                 <li>
-                  <a href="/faqs">FAQs</a>
+                  <Link to="/faqs">FAQs</Link>
                 </li>
                 <li>
-                  <a href="/booking">Booking</a>
+                  <Link to="/booking">Booking</Link>
                 </li>
                 <li>
-                  <a href="/blog">Blog</a>
+                  <Link to="/blog">Blog</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="#" onClick={handleLogout}>
+              <button className="logout-button" onClick={handleLogout}>
                 Logout
-              </a>
+              </button>
             </li>
             <li>
-              <a href="/profile">{user?.name}</a>
+              <Link to="/profile">{user?.name}</Link>
             </li>
           </>
         ) : (
           <>
             <li>
-              <a href="/login">Login</a>
+              <Link to="/login">Login</Link>
             </li>
             <li>
-              <a href="/sign up">Sign Up</a>
+              <Link to="/sign-up">Sign Up</Link>
             </li>
           </>
         )}
