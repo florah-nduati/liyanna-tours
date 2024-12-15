@@ -1,11 +1,14 @@
-import { defineConfig } from "vite";
-import react from "@vitejs/plugin-react-swc";
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react-swc';
 
-// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/",
+  base: '', // Leave this empty for relative paths
   build: {
-    outDir: "dist", // Explicitly define the output directory
+    outDir: 'dist',
+    emptyOutDir: true,
+    rollupOptions: {
+      input: './index.html',
+    },
   },
 });

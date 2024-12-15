@@ -23,7 +23,7 @@ const client = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={client}>
-      <BrowserRouter>
+      <BrowserRouter >
         <div className="App">
           <Navbar />
           <Routes>
