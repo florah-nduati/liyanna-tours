@@ -57,11 +57,14 @@ const Footer = () => {
               <FaLinkedin />
             </a>
             <a
-              href="https://www.linkedin.com/in/liyanna-luxury-tours/"
-              aria-label="LinkedIn"
+              href="https://wa.me/254732266660"
+              aria-label="whatsapp"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaWhatsappSquare />
             </a>
+
             <a
               href="https://www.linkedin.com/in/liyanna-luxury-tours/"
               aria-label="LinkedIn"

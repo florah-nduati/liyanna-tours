@@ -30,7 +30,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/sign-up" element={<SignUp />} />
-            
+
             {/* No authentication required for the following routes */}
             <Route path="/packages" element={<TourPackages />} />
             <Route path="/tour/:id" element={<TourDetails />} />
