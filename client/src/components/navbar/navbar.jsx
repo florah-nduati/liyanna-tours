@@ -43,16 +43,32 @@ const Navbar = () => {
         {isAuthenticated ? (
           <>
             <li>
-              <Link to="/booking">Booking</Link>
-            </li>
-
-            <li>
               <button className="logout-button" onClick={handleLogout}>
                 Logout
               </button>
             </li>
             <li>
               <Link to="/profile">{user?.name}</Link>
+            </li>
+            {/* Protected "Booking" link inside dropdown */}
+            <li className="dropdown">
+              <Link to="#" className="dropdown-btn">
+                More
+              </Link>
+              <ul className="dropdown-menu">
+                <li>
+                  <Link to="/booking">Booking</Link>
+                </li>
+                <li>
+                  <Link to="/faqs">FAQs</Link>
+                </li>
+                <li>
+                  <Link to="/contact">Contact</Link>
+                </li>
+                <li>
+                  <Link to="/blog">Blog</Link>
+                </li>
+              </ul>
             </li>
           </>
         ) : (
@@ -83,10 +99,10 @@ const Navbar = () => {
               </ul>
             </li>
             <li>
-              <Link to="/login"></Link>
+              <Link to="/login">Login</Link>
             </li>
             <li>
-              <Link to="/sign-up"></Link>
+              <Link to="/sign-up">Sign Up</Link>
             </li>
           </>
         )}
