@@ -93,10 +93,10 @@ const Navbar = () => {
         {!isAuthenticated && (
           <>
             <li>
-              <Link to="/login">Login</Link>
+              <Link to="/login"></Link>
             </li>
             <li>
-              <Link to="/sign-up">Sign Up</Link>
+              <Link to="/sign-up"></Link>
             </li>
           </>
         )}
