@@ -15,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://liyanna-tours-4.onrender.com", // Frontend deployment URL
+    origin: "https://liyanna-tours.onrender.com", // Frontend deployment URL
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
   })
