@@ -7,12 +7,6 @@ import { createBooking } from "./controllers/bookingController.js";
 import errorHandler from "./middleware/errorHandler.js";
 import validateUserInformation from "./middleware/validateUserInformation.js";
 import verifyToken from "./middleware/verifyToken.js";
-import path from "path";
-import { fileURLToPath } from "url";
-
-// Resolve __dirname for ES modules
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
 
 const app = express();
 
@@ -21,7 +15,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: "https://liyanna-tours-3.onrender.com", // Frontend URL
+    origin: "https://liyanna-tours-4.onrender.com", // Frontend deployment URL
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
   })
@@ -32,14 +26,6 @@ app.use(cookieParser());
 app.post("/users", validateUserInformation, addUser);
 app.post("/auth/login", loginUser);
 app.post("/booking", verifyToken, createBooking);
-
-// Serve React app from dist (adjusted path)
-app.use(express.static(path.join(__dirname, "../client", "dist")));
-
-// React catch-all for SPA routes
-app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "../client", "dist", "index.html"));
-});
 
 // Error handling middleware
 app.use(errorHandler);
