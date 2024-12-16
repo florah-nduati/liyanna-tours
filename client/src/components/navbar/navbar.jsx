@@ -42,7 +42,6 @@ const Navbar = () => {
         </li>
         {isAuthenticated ? (
           <>
-
             <li>
               <Link to="/booking">Booking</Link>
             </li>
@@ -58,8 +57,8 @@ const Navbar = () => {
           </>
         ) : (
           <>
-                      <li>
-            <Link to="/packages">Tour Packages</Link>
+            <li>
+              <Link to="/packages">Tour Packages</Link>
             </li>
             <li>
               <Link to="/about">About Us</Link>
@@ -75,20 +74,19 @@ const Navbar = () => {
                 <li>
                   <Link to="/faqs">FAQs</Link>
                 </li>
-                 <li>
-              <Link to="/contact">Contact</Link>
+                <li>
+                  <Link to="/contact">Contact</Link>
                 </li>
-
                 <li>
                   <Link to="/blog">Blog</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link to="/login"></Link>
+              <Link to="/login">Login</Link>
             </li>
             <li>
-              <Link to="/sign-up"></Link>
+              <Link to="/sign-up">Sign Up</Link>
             </li>
           </>
         )}

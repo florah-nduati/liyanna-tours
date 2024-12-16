@@ -23,91 +23,31 @@ const client = new QueryClient();
 function App() {
   return (
     <QueryClientProvider client={client}>
-      <BrowserRouter >
+      <BrowserRouter>
         <div className="App">
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/sign up" element={<SignUp />} />
+            
+            {/* No authentication required for the following routes */}
+            <Route path="/packages" element={<TourPackages />} />
+            <Route path="/tour/:id" element={<TourDetails />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/gallery" element={<Gallery />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/faqs" element={<FAQs />} />
+            <Route path="/blog" element={<Blog />} />
+            <Route path="/thank-you" element={<ThankYou />} />
+            <Route path="/blog/:postId" element={<SingleBlog />} />
 
-            <Route
-              path="/packages"
-              element={
-                <Protected>
-                  <TourPackages />
-                </Protected>
-              }
-            />
-            <Route
-              path="/tour/:id"
-              element={
-                <Protected>
-                  <TourDetails />
-                </Protected>
-              }
-            />
+            {/* Only booking route requires authentication */}
             <Route
               path="/booking"
               element={
                 <Protected>
                   <Booking />
-                </Protected>
-              }
-            />
-            <Route
-              path="/about"
-              element={
-                <Protected>
-                  <About />
-                </Protected>
-              }
-            />
-            <Route
-              path="/gallery"
-              element={
-                <Protected>
-                  <Gallery />
-                </Protected>
-              }
-            />
-            <Route
-              path="/contact"
-              element={
-                <Protected>
-                  <Contact />
-                </Protected>
-              }
-            />
-            <Route
-              path="/faqs"
-              element={
-                <Protected>
-                  <FAQs />
-                </Protected>
-              }
-            />
-            <Route
-              path="/blog"
-              element={
-                <Protected>
-                  <Blog />
-                </Protected>
-              }
-            />
-            <Route
-              path="/thank-you"
-              element={
-                <Protected>
-                  <ThankYou />
-                </Protected>
-              }
-            />
-            <Route
-              path="/blog/:postId"
-              element={
-                <Protected>
-                  <SingleBlog />
                 </Protected>
               }
             />
