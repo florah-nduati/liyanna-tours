@@ -29,7 +29,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
-            <Route path="/sign up" element={<SignUp />} />
+            <Route path="/sign-up" element={<SignUp />} />
             
             {/* No authentication required for the following routes */}
             <Route path="/packages" element={<TourPackages />} />
@@ -42,7 +42,7 @@ function App() {
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/blog/:postId" element={<SingleBlog />} />
 
-            {/* Only booking route requires authentication */}
+            {/* Only the booking route requires authentication */}
             <Route
               path="/booking"
               element={

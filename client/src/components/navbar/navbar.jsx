@@ -16,6 +16,12 @@ const Navbar = () => {
     navigate("/login");
   };
 
+  const handleBookingClick = () => {
+    if (!isAuthenticated) {
+      navigate("/login"); // Redirect to login if not authenticated
+    }
+  };
+
   return (
     <nav className="navbar">
       {/* Logo Section */}
@@ -50,26 +56,6 @@ const Navbar = () => {
             <li>
               <Link to="/profile">{user?.name}</Link>
             </li>
-            {/* Protected "Booking" link inside dropdown */}
-            <li className="dropdown">
-              <Link to="#" className="dropdown-btn">
-                More
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link to="/booking">Booking</Link>
-                </li>
-                <li>
-                  <Link to="/faqs">FAQs</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-              </ul>
-            </li>
           </>
         ) : (
           <>
@@ -82,22 +68,30 @@ const Navbar = () => {
             <li>
               <Link to="/gallery">Gallery</Link>
             </li>
-            <li className="dropdown">
-              <Link to="#" className="dropdown-btn">
-                More
-              </Link>
-              <ul className="dropdown-menu">
-                <li>
-                  <Link to="/faqs">FAQs</Link>
-                </li>
-                <li>
-                  <Link to="/contact">Contact</Link>
-                </li>
-                <li>
-                  <Link to="/blog">Blog</Link>
-                </li>
-              </ul>
+          </>
+        )}
+        {/* More Dropdown Menu */}
+        <li className="dropdown">
+          <Link to="#" className="dropdown-btn">
+            More
+          </Link>
+          <ul className="dropdown-menu">
+            <li>
+              <Link to="#" onClick={handleBookingClick}>Booking</Link>
             </li>
+            <li>
+              <Link to="/faqs">FAQs</Link>
+            </li>
+            <li>
+              <Link to="/contact">Contact</Link>
+            </li>
+            <li>
+              <Link to="/blog">Blog</Link>
+            </li>
+          </ul>
+        </li>
+        {!isAuthenticated && (
+          <>
             <li>
               <Link to="/login">Login</Link>
             </li>
