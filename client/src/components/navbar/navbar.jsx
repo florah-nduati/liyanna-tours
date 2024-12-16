@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.jpeg";
 import "./navbar.css";
-import useUserStore from "../../../store/userStore";
+import useUserStore from "../../store/userStore";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);

@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { blogData } from "../../blogData";
+import { blogData } from "../../components/blogData";
 import "./singleBlog.css";
 
 const SingleBlog = () => {

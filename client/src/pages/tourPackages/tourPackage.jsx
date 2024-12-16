@@ -29,7 +29,7 @@ const packages = [
     image: image1,
     title: "Exotic Beach Getaway",
     description:
-      "Relax on pristine beaches with luxurious 5-star resorts, gourmet dining, and private beach access.",
+      "Relax on pristine beaches with luxurious 5-star resorts, dining, and private beach access.",
     features: [
       "Private Beach Access",
       "Exclusive Spa Services",

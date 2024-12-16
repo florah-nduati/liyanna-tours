@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useMutation } from "react-query";
-import useUserStore from "../../../store/userStore";
+import useUserStore from "../../store/userStore";
 import "./login.css";
 import apiBase from "../../utils/api";
 import { useNavigate } from "react-router-dom";

@@ -1,8 +1,8 @@
-import image1 from "./assets/destination.jpg";
-import image2 from "./assets/planning.webp";
-import image3 from "./assets/hotels.jpg";
-import image4 from "./assets/adventure.jpg";
-import image5 from "./assets/food.jpg";
+import image1 from "../assets/destination.jpg";
+import image2 from "../assets/planning.webp";
+import image3 from "../assets/hotels.jpg";
+import image4 from "../assets/adventure.jpg";
+import image5 from "../assets/food.jpg";
 
 export const blogData = [
   {
