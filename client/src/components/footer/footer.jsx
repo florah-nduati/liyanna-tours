@@ -6,7 +6,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaWhatsappSquare,
-} from "react-icons/fa"; // Importing social icons from react-icons
+} from "react-icons/fa"; 
 
 const Footer = () => {
   return (

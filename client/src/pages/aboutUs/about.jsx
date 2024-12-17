@@ -9,7 +9,7 @@ import "./about.css";
 const About = () => {
   return (
     <div className="about">
-      {/* Hero Section */}
+      
       <div className="about-hero">
         <video className="about-video" autoPlay loop muted>
           <source src={about} type="video/mp4" />
@@ -26,7 +26,7 @@ const About = () => {
 
       <h1 className="page-title">About Us</h1>
 
-      {/* Our Story Section */}
+    
       <section className="about-card about-story">
         <div className="about-story-content">
           <h2>Our Story</h2>
@@ -43,7 +43,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Mission, Vision, and Values in Cards */}
+     
       <section className="about-card-columns">
         <div className="about-card mission-card">
           <h2>Our Mission</h2>
@@ -86,7 +86,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* Services Section */}
+    
       <section className="about-card services-card">
         <h2>Our Services</h2>
         <ul className="about-services">

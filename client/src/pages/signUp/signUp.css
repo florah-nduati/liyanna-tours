@@ -33,7 +33,6 @@ h2 {
   text-align: center;
 }
 
-/* Style the label and input fields */
 .label {
   font-size: 14px;
   color: #7f5aff;
@@ -60,7 +59,7 @@ h2 {
   font-weight: 500;
 }
 
-/* Enhanced Input fields */
+
 .input-group input {
   padding: 15px;
   border-radius: 30px;
@@ -86,7 +85,7 @@ h2 {
   color: transparent;
 }
 
-/* Style the Submit Button */
+
 button {
   padding: 16px 30px;
   background-color: #7f5aff;
@@ -111,7 +110,7 @@ button:disabled {
   cursor: not-allowed;
 }
 
-/* Style the message for errors or success */
+
 .message {
   font-size: 14px;
   margin-top: 20px;
@@ -126,7 +125,6 @@ button:disabled {
   color: green;
 }
 
-/* Sign-up prompt text */
 .signup-prompt {
   text-align: center;
   margin-top: 20px;

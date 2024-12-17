@@ -1,4 +1,4 @@
-/* Hero Section Styling */
+
 .hero {
   position: relative;
   height: 100vh;
@@ -25,7 +25,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.5); /* Add darker overlay for contrast */
+  background: rgba(0, 0, 0, 0.5); 
   color: #fff;
   padding: 1rem;
   text-align: center;
@@ -60,7 +60,7 @@
   color: black;
 }
 
-/* Navigation Buttons */
+
 .hero-navigation {
   position: absolute;
   bottom: 20px;

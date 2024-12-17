@@ -3,8 +3,8 @@ import { useParams } from "react-router-dom";
 import "./tourDetails.css";
 
 const TourDetails = () => {
-  const { id } = useParams(); // Get tour ID from URL
-  // Fetch details based on ID (mock data for now)
+  const { id } = useParams(); 
+
   const tour = {
     id,
     title: "Beach Getaway",

@@ -373,7 +373,7 @@ const TourPackages = () => {
         draggable={true}
         showDots={true}
         responsive={responsive}
-        ssr={true} // Means to render carousel on server-side.
+        ssr={true} 
         infinite={true}
         autoPlay={true}
         autoPlaySpeed={3000}

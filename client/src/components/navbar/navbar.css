@@ -1,4 +1,4 @@
-/* Navbar Container */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -7,7 +7,7 @@
     to right,
     #37034d,
     #8547e0
-  ); /* Gradient background */
+  ); 
   padding: 1rem 2rem;
   color: #fff;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -17,7 +17,7 @@
   transition: all 0.3s ease;
 }
 
-/* Logo Styling */
+
 .navbar-logo a {
   font-size: 1.8rem;
   font-weight: bold;
@@ -31,7 +31,7 @@
   text-shadow: 0 4px 10px rgba(255, 255, 255, 0.4);
 }
 
-/* Navbar Links Container */
+
 .navbar-links {
   display: flex;
   list-style: none;
@@ -42,7 +42,7 @@
   position: relative;
 }
 
-/* Navbar Links */
+
 .navbar-links a {
   color: #ffffff;
   text-decoration: none;
@@ -59,7 +59,7 @@
   text-shadow: 0px 2px 8px rgba(244, 162, 97, 0.6);
 }
 
-/* Dropdown Menu */
+
 .dropdown {
   position: relative;
 }
@@ -96,7 +96,7 @@
   display: block;
 }
 
-/* Call-to-Action Button */
+
 .navbar-cta {
   background-color: #f4a261;
   border: none;
@@ -160,25 +160,25 @@
   right: 1.5rem;
 }
 
-/* Navbar Links for Mobile with Helix Effect */
+
 @media (max-width: 768px) {
-  /* Navbar container adjustments for small screens */
+  
   .navbar {
-    flex-direction: row; /* Horizontal alignment */
+    flex-direction: row; 
     justify-content: space-between;
     align-items: center;
-    padding: 0.5rem 1rem; /* Reduced padding for compact design */
+    padding: 0.5rem 1rem; 
   }
 
-  /* Logo and Name Styling */
+ 
   .navbar-logo {
-    flex: 1; /* Push other elements away */
+    flex: 1; 
     display: flex;
     align-items: flex-start;
   }
 
   .navbar-logo img {
-    margin-right: 0.5rem; /* Space between logo and text */
+    margin-right: 0.5rem; 
     width: 50px;
     height: 50px;
   }
@@ -188,12 +188,12 @@
     font-weight: bold;
   }
 
-  /* Centering the Bookmark Button */
+ 
   .navbar-cta {
     position: absolute;
     left: 50%;
-    transform: translateX(-50%); /* Center the button */
-    z-index: 1050; /* Ensure it's above other elements */
+    transform: translateX(-50%); 
+    z-index: 1050; 
     padding: 0.6rem 1.5rem;
     font-size: 0.9rem;
     font-weight: bold;
@@ -207,9 +207,9 @@
     background-color: #e76f51;
   }
 
-  /* Hamburger Menu */
+  
   .hamburger {
-    flex: 1; /* Push it to the opposite end */
+    flex: 1; 
     display: block;
     font-size: 1.8rem;
     color: white;
@@ -218,7 +218,7 @@
     z-index: 1100;
   }
 
-  /* Navbar Links */
+ 
   .navbar-links {
     display: none;
     flex-direction: column;
@@ -280,7 +280,7 @@
     background-color: #f18701;
   }
 
-  /* Helix Animation */
+
   @keyframes helixAnimation {
     0% {
       opacity: 0;
@@ -297,7 +297,7 @@
   }
 }
 
-/* Fade-in Animation */
+
 @keyframes fadeIn {
   from {
     opacity: 0;

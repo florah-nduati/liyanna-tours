@@ -1,4 +1,4 @@
-/* General Styling */
+
 .contact {
   padding: 3rem;
   background: linear-gradient(
@@ -21,7 +21,7 @@
   animation: fadeIn 1s ease-out;
 }
 
-/* Contact Info Section */
+
 .contact-info {
   display: flex;
   flex-wrap: wrap;

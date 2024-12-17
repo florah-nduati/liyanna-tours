@@ -99,7 +99,7 @@ const Contact = () => {
         </form>
       </div>
 
-      {/* Location - Google Map for Nairobi, Kenya */}
+      
       <div className="map-section">
         <h2>Our Location</h2>
         <div className="map-container">

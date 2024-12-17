@@ -4,7 +4,7 @@
     135deg,
     #37034d,
     #37034d
-  ); /* Gradient background */
+  );
   color: #fff;
   padding: 3rem 2rem;
   text-align: center;
@@ -12,7 +12,7 @@
   overflow: hidden;
 }
 
-/* Decorative Top Border */
+
 .footer::before {
   content: "";
   position: absolute;
@@ -27,11 +27,11 @@
     #fad0c4,
     #fbc2eb,
     #a18cd1
-  ); /* Beautiful gradient border */
+  ); 
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
-/* Footer Content Layout */
+
 .footer-content {
   display: flex;
   flex-wrap: wrap;
@@ -40,7 +40,7 @@
   max-width: 1200px;
   margin: 0 auto;
   position: relative;
-  z-index: 1; /* Ensures content is above decorative border */
+  z-index: 1; 
 }
 
 .footer-section {
@@ -51,10 +51,10 @@
 .footer-section h4 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  color: #ffd700; /* Golden header */
+  color: #ffd700; 
   text-transform: uppercase;
   letter-spacing: 1px;
-  border-bottom: 2px solid #ffd700; /* Adds elegance */
+  border-bottom: 2px solid #ffd700; 
   display: inline-block;
   padding-bottom: 0.3rem;
 }
@@ -80,11 +80,11 @@
 }
 
 .footer-section ul li a:hover {
-  color: #ffd700; /* Golden hover effect */
-  transform: translateX(5px); /* Subtle animation */
+  color: #ffd700; 
+  transform: translateX(5px); 
 }
 
-/* Social Icons */
+
 .social-icons {
   display: flex;
   justify-content: center;
@@ -151,7 +151,7 @@
   color: #ffd700;
 }
 
-/* Background Particles Effect */
+
 .footer::after {
   content: "";
   position: absolute;
@@ -165,7 +165,7 @@
   z-index: 0;
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .footer-content {
     flex-direction: column;

@@ -18,13 +18,13 @@ const Navbar = () => {
 
   const handleBookingClick = () => {
     if (!isAuthenticated) {
-      navigate("/login"); // Redirect to login if not authenticated
+      navigate("/login");
     }
   };
 
   return (
     <nav className="navbar">
-      {/* Logo Section */}
+      
       <div className="navbar-logo">
         <Link to="/">
           <img src={logo} alt="Liyanna Luxury Tours Logo" />
@@ -32,7 +32,6 @@ const Navbar = () => {
         <h1 className="navbar-heading">Liyanna Luxury Tours</h1>
       </div>
 
-      {/* Hamburger Menu for Mobile */}
       <div
         className="hamburger"
         onClick={() => setIsOpen(!isOpen)}
@@ -41,7 +40,6 @@ const Navbar = () => {
         ☰
       </div>
 
-      {/* Navbar Links */}
       <ul className={`navbar-links ${isOpen ? "show" : ""}`}>
         <li>
           <Link to="/">Home</Link>
@@ -70,7 +68,7 @@ const Navbar = () => {
             </li>
           </>
         )}
-        {/* More Dropdown Menu */}
+ 
         <li className="dropdown">
           <Link to="#" className="dropdown-btn">
             More
@@ -98,7 +96,7 @@ const Navbar = () => {
               <Link to="/login"></Link>
             </li>
             <li>
-              <Link to="/sign-up">sign up</Link>
+              <Link to="/sign-up"></Link>
             </li>
           </>
         )}

@@ -10,7 +10,7 @@
 }
 .service-stars {
   font-size: 1.2rem;
-  color: #ff0000; /* Red stars */
+  color: #ff0000; 
 }
 
 .services-grid {
@@ -18,25 +18,25 @@
   grid-template-columns: repeat(
     auto-fit,
     minmax(250px, 1fr)
-  ); /* Adjusted min size for better responsiveness */
+  );
   gap: 1.5rem;
-  justify-items: center; /* Ensures the cards are centered within the grid */
+  justify-items: center;
 }
 
 .service-card {
   background: white;
-  padding: 1.5rem; /* Added more padding for better spacing inside the cards */
+  padding: 1.5rem; 
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9); /* Softer shadow for better visual appeal */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9); 
   transition:
     transform 0.3s ease,
-    box-shadow 0.3s ease; /* Added transition for smooth hover effects */
-  max-width: 300px; /* Prevents cards from becoming too large */
+    box-shadow 0.3s ease; 
+  max-width: 300px; 
 }
 
 .service-card:hover {
-  transform: translateY(-10px); /* Slightly raise the card on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Slightly stronger shadow on hover */
+  transform: translateY(-10px); 
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); 
 }
 
 .service-card img {
@@ -50,24 +50,24 @@
 }
 @keyframes zoomEffect {
   0% {
-    transform: scale(1); /* Original size */
+    transform: scale(1); 
   }
   50% {
-    transform: scale(1.1); /* Slightly zoomed */
+    transform: scale(1.1); 
   }
   100% {
-    transform: scale(1); /* Back to original size */
+    transform: scale(1); 
   }
 }
 
 .service-card h3 {
-  font-size: 1.3rem; /* Slightly larger title */
+  font-size: 1.3rem; 
   margin-bottom: 0.5rem;
   color: #37034d;
 }
 
 .service-card p {
   color: black;
-  font-size: 1rem; /* Adjusted font size for better readability */
+  font-size: 1rem;
   line-height: 1.5;
 }

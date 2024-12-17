@@ -1,4 +1,4 @@
-/* Container for the Thank You page */
+
 .thank-you-container {
   display: flex;
   justify-content: center;
@@ -9,7 +9,7 @@
   padding: 20px;
 }
 
-/* Main content area */
+
 .thank-you-content {
   background-color: white;
   border-radius: 10px;
@@ -19,7 +19,7 @@
   width: 100%;
 }
 
-/* Title Styling */
+
 .thank-you-title {
   font-size: 2.5rem;
   color: #2c3e50;
@@ -27,27 +27,27 @@
   font-weight: bold;
 }
 
-/* Main thank you message */
+
 .thank-you-message {
   font-size: 1.2rem;
   color: #34495e;
   margin-bottom: 20px;
 }
 
-/* Additional info */
+
 .thank-you-info {
   font-size: 1.1rem;
   color: #7f8c8d;
   margin-bottom: 30px;
 }
 
-/* Highlighting important text */
+
 .highlight {
   color: #e74c3c;
   font-weight: bold;
 }
 
-/* Back home button */
+
 .back-home-button {
   display: inline-block;
   padding: 10px 20px;

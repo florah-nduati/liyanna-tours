@@ -1,4 +1,4 @@
-/* Container Styles */
+
 .faq-container {
   padding: 3rem 2rem;
   font-family: Arial, sans-serif;
@@ -14,7 +14,7 @@
   animation: fadeIn 1s ease-out;
 }
 
-/* FAQ List Styles */
+
 .faq-list {
   margin-bottom: 3rem;
 }
@@ -59,8 +59,7 @@
   opacity: 1;
 }
 
-/* Policy Section Styles */
-/* Terms and Conditions Styles */
+
 .policy-section h3 {
   font-size: 1.8rem;
   color: #6c5ce7;
@@ -88,7 +87,7 @@
   text-decoration: underline;
 }
 
-/* Animations */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -100,7 +99,7 @@
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .faq-title {
     font-size: 2rem;

@@ -11,23 +11,23 @@ const videos = [video1, video2, video3, video4, video5];
 const HeroSection = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
 
-  // Automatically change video every 8 seconds
+
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentVideo((prevVideo) => (prevVideo + 1) % videos.length);
-    }, 8000); // Change interval time as desired
+    }, 8000);
     return () => clearInterval(interval);
   }, []);
 
   return (
     <div className="hero">
-      {/* Video Player */}
+     
       <video className="hero-video" autoPlay muted loop key={currentVideo}>
         <source src={videos[currentVideo]} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      {/* Overlay Content */}
+   
       <div className="hero-overlay">
         <div className="hero-content">
           <h1>Luxury Redefined, Memories Reimagined</h1>
@@ -40,7 +40,6 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {/* Navigation Buttons */}
         <div className="hero-navigation">
           {videos.map((_, index) => (
             <button

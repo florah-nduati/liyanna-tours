@@ -31,21 +31,21 @@ const testimonials = [
   },
 ];
 
-// React Slick settings with autoplay, arrows, and other features
+
 const settings = {
-  dots: true, // Show pagination dots
-  infinite: true, // Infinite scrolling
-  speed: 300, // Speed of slide transition
-  autoplay: true, // Enable autoplay
-  autoplaySpeed: 3000, // Autoplay delay in milliseconds
-  slidesToShow: 2, // Show one slide at a time
-  slidesToScroll: 1, // Scroll one slide at a time
-  arrows: true, // Enable navigation arrows
+  dots: true, 
+  infinite: true, 
+  speed: 300, 
+  autoplay: true, 
+  autoplaySpeed: 3000, 
+  slidesToShow: 2,
+  slidesToScroll: 1, 
+  arrows: true, 
   responsive: [
     {
       breakpoint: 768,
       settings: {
-        slidesToShow: 1, // Show 1 slide on small screens
+        slidesToShow: 1, 
       },
     },
   ],

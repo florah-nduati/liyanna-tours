@@ -72,7 +72,7 @@
   letter-spacing: 0.5px;
 }
 
-/* Swiper pagination styles */
+
 .swiper-pagination {
   bottom: -30px;
 }
@@ -86,7 +86,7 @@
   background-color: #f4a261;
 }
 
-/* Responsive styling */
+
 @media (max-width: 768px) {
   .testimonials-section {
     padding: 3rem 1.5rem;

@@ -2,12 +2,12 @@ import React, { useState } from "react";
 import image1 from "../../assets/destination.jpg";
 import image2 from "../../assets/planning.webp";
 import image3 from "../../assets/hotels.jpg";
-import image4 from "../../assets/adventure.jpg"; // New image
-import image5 from "../../assets/food.jpg"; // New image
+import image4 from "../../assets/adventure.jpg"; 
+import image5 from "../../assets/food.jpg"; 
 import "./blog.css";
 
 const Blog = () => {
-  // Sample blog posts data (can be fetched from backend/API)
+
   const posts = [
     {
       title: "Top 5 Luxury Destinations You Must Visit",
@@ -50,7 +50,7 @@ const Blog = () => {
     },
   ];
 
-  // Category filter logic
+
   const [category, setCategory] = useState("All");
 
   const filteredPosts =
@@ -87,7 +87,7 @@ const Blog = () => {
         </select>
       </div>
 
-      {/* Featured Blog Post */}
+  
       <div className="featured-post">
         <img
           src={posts[0].image}
@@ -118,7 +118,7 @@ const Blog = () => {
         ))}
       </div>
 
-      {/* Pagination */}
+  
       <div className="pagination">
         <button className="pagination-button">Previous</button>
         <button className="pagination-button">Next</button>
