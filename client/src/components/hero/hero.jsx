@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { Link } from "react-router-dom"; // Import Link from react-router-dom
 import "./hero.css";
 import video1 from "../../assets/hero.mp4";
 import video2 from "../../assets/hero1.mp4";
@@ -11,7 +12,6 @@ const videos = [video1, video2, video3, video4, video5];
 const HeroSection = () => {
   const [currentVideo, setCurrentVideo] = useState(0);
 
-
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentVideo((prevVideo) => (prevVideo + 1) % videos.length);
@@ -21,13 +21,11 @@ const HeroSection = () => {
 
   return (
     <div className="hero">
-     
       <video className="hero-video" autoPlay muted loop key={currentVideo}>
         <source src={videos[currentVideo]} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-   
       <div className="hero-overlay">
         <div className="hero-content">
           <h1>Luxury Redefined, Memories Reimagined</h1>
@@ -35,9 +33,9 @@ const HeroSection = () => {
             Explore the world with Liyanna Luxury Tours. We provide world-class
             services to make your travel unforgettable.
           </p>
-          <a href="/packages" className="hero-btn">
+          <Link to="/packages" className="hero-btn">
             Explore Packages
-          </a>
+          </Link>
         </div>
 
         <div className="hero-navigation">
