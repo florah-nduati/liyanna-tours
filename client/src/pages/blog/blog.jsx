@@ -1,13 +1,13 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom"; 
 import image1 from "../../assets/destination.jpg";
 import image2 from "../../assets/planning.webp";
 import image3 from "../../assets/hotels.jpg";
-import image4 from "../../assets/adventure.jpg"; 
-import image5 from "../../assets/food.jpg"; 
+import image4 from "../../assets/adventure.jpg";
+import image5 from "../../assets/food.jpg";
 import "./blog.css";
 
 const Blog = () => {
-
   const posts = [
     {
       title: "Top 5 Luxury Destinations You Must Visit",
@@ -50,7 +50,6 @@ const Blog = () => {
     },
   ];
 
-
   const [category, setCategory] = useState("All");
 
   const filteredPosts =
@@ -87,7 +86,6 @@ const Blog = () => {
         </select>
       </div>
 
-  
       <div className="featured-post">
         <img
           src={posts[0].image}
@@ -97,9 +95,9 @@ const Blog = () => {
         <div className="featured-content">
           <h3>{posts[0].title}</h3>
           <p>{posts[0].description}</p>
-          <a href={posts[0].link} className="featured-link">
+          <Link to={posts[0].link} className="featured-link">
             Read More
-          </a>
+          </Link>
         </div>
       </div>
 
@@ -110,15 +108,14 @@ const Blog = () => {
             <div className="blog-content">
               <h3>{post.title}</h3>
               <p>{post.description}</p>
-              <a href={post.link} className="blog-read-more">
+              <Link to={post.link} className="blog-read-more">
                 Read More
-              </a>
+              </Link>
             </div>
           </div>
         ))}
       </div>
 
-  
       <div className="pagination">
         <button className="pagination-button">Previous</button>
         <button className="pagination-button">Next</button>

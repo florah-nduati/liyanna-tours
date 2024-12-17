@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom"; 
 import { blogData } from "../../components/blogData";
 import "./singleBlog.css";
 
@@ -44,16 +44,16 @@ const SingleBlog = () => {
             );
             return (
               <li key={index}>
-                <a href={`/blog/${relatedPost.id}`}>{relatedPost.title}</a>
+                <Link to={`/blog/${relatedPost.id}`}>{relatedPost.title}</Link>
               </li>
             );
           })}
         </ul>
       </div>
 
-      <a href="/blog" className="back-link">
+      <Link to="/blog" className="back-link">
         Back to Blog
-      </a>
+      </Link>
     </div>
   );
 };
