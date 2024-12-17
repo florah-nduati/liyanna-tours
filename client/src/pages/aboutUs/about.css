@@ -1,4 +1,3 @@
-/* Main About Page */
 .about {
   padding: 2rem;
   background: linear-gradient(
@@ -17,7 +16,6 @@
   }
 }
 
-/* Hero Section */
 .about-hero {
   position: relative;
   height: 400px;
@@ -32,7 +30,6 @@
   position: absolute;
 }
 
-/* Hero Section Content */
 .about-hero-content {
   position: absolute;
   top: 50%;
@@ -43,11 +40,10 @@
   background: rgba(0, 0, 0, 0.5);
   padding: 1rem;
   border-radius: 10px;
-  width: 80%; /* Add some width to prevent it from taking up full screen */
-  max-width: 700px; /* Limit max width for better control */
+  width: 80%;
+  max-width: 700px;
 }
 
-/* Adjust the text inside the .about-hero-content for smaller screens */
 .about-hero-content h1 {
   font-size: 2.5rem;
   line-height: 1.2;
@@ -58,48 +54,47 @@
   line-height: 1.6;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 1200px) {
   .about-hero-content {
-    width: 90%; /* Slightly increase width for medium screens */
+    width: 90%;
   }
 
   .about-hero-content h1 {
-    font-size: 2rem; /* Reduce font size on medium screens */
+    font-size: 2rem;
   }
 
   .about-hero-content p {
-    font-size: 1.1rem; /* Adjust paragraph font size */
+    font-size: 1.1rem;
   }
 }
 
 @media (max-width: 768px) {
   .about-hero-content {
-    width: 95%; /* Further reduce the width on small screens */
-    padding: 0.8rem; /* Reduce padding */
+    width: 95%;
+    padding: 0.8rem;
   }
 
   .about-hero-content h1 {
-    font-size: 1.8rem; /* Reduce heading font size */
+    font-size: 1.8rem;
   }
 
   .about-hero-content p {
-    font-size: 1rem; /* Reduce paragraph font size */
+    font-size: 1rem;
   }
 }
 
 @media (max-width: 480px) {
   .about-hero-content {
-    width: 100%; /* Full width on very small screens */
-    padding: 0.5rem; /* Reduce padding further */
+    width: 100%;
+    padding: 0.5rem;
   }
 
   .about-hero-content h1 {
-    font-size: 1.6rem; /* Further reduce heading font size */
+    font-size: 1.6rem;
   }
 
   .about-hero-content p {
-    font-size: 0.9rem; /* Reduce paragraph font size */
+    font-size: 0.9rem;
   }
 }
 
@@ -110,7 +105,6 @@
   color: #333;
 }
 
-/* Card Styling */
 .about-card {
   background: #fff;
   padding: 1.5rem;
@@ -153,7 +147,6 @@
   overflow: hidden;
 }
 
-/* Our Story Section */
 .about-story {
   display: flex;
   align-items: center;
@@ -176,7 +169,6 @@
   object-fit: cover;
 }
 
-/* Meet the Team Section */
 .meet-team-card {
   background: #fff;
   padding: 1.5rem;
@@ -221,7 +213,6 @@
   color: #777;
 }
 
-/* Animations */
 @keyframes fadeInUp {
   0% {
     opacity: 0;
@@ -249,7 +240,6 @@
   animation-delay: 0.8s;
 }
 
-/* Call-to-Action Card */
 .call-to-action-card {
   background: linear-gradient(to right, #007bff, #8547e0);
   color: #fff;
@@ -285,7 +275,6 @@
   color: #fff;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .about-card-columns {
     flex-direction: column;
