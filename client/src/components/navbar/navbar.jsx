@@ -98,7 +98,7 @@ const Navbar = () => {
               <Link to="/login"></Link>
             </li>
             <li>
-              <Link to="/sign-up"></Link>
+              <Link to="/sign-up">sign up</Link>
             </li>
           </>
         )}

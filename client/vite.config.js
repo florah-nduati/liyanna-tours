@@ -7,9 +7,9 @@ export default defineConfig({
   build: {
     outDir: "dist", // Specifies the output directory
     emptyOutDir: true, // Clears the dist folder before building
-    rollupOptions: {
-      input: "./index.html", // Entry point of your app
-    },
+   // rollupOptions: {
+    //  input: "./index.html", // Entry point of your app
+   // },
   },
-  publicDir: "public", // Ensure static assets like favicon.ico are properly handled
+  //publicDir: "public", // Ensure static assets like favicon.ico are properly handled
 });
