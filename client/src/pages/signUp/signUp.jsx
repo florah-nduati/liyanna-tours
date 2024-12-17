@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { useMutation } from "react-query";
+import { Link, useNavigate } from "react-router-dom"; // Import Link
 import "./signUp.css";
 import apiBase from "../../utils/api";
-import { useNavigate } from "react-router-dom";
 
 function SignUp() {
   const [name, setName] = useState("");
@@ -128,7 +128,7 @@ function SignUp() {
         </p>
 
         <p className="signup-prompt">
-          Already have an account? <a href="/login">Log in</a>
+          Already have an account? <Link to="/login">Log in</Link>
         </p>
       </form>
     </div>

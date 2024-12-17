@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { useMutation } from "react-query";
+import { Link, useNavigate } from "react-router-dom"; // Import Link
 import useUserStore from "../../store/userStore";
 import "./login.css";
 import apiBase from "../../utils/api";
-import { useNavigate } from "react-router-dom";
 
 function Login() {
   const [email, setEmail] = useState("");
@@ -112,7 +112,7 @@ function Login() {
         </p>
 
         <p className="signup-prompt">
-          Don't have an account? <a href="/sign-up">Create One</a>
+          Don't have an account? <Link to="/sign-up">Create One</Link>
         </p>
       </form>
     </div>
