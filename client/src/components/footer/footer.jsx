@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./footer.css";
 import {
   FaFacebook,
@@ -6,7 +7,7 @@ import {
   FaInstagram,
   FaLinkedin,
   FaWhatsappSquare,
-} from "react-icons/fa"; 
+} from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -16,16 +17,16 @@ const Footer = () => {
           <h4>Quick Links</h4>
           <ul>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/packages">Tour Packages</a>
+              <Link to="/packages">Tour Packages</Link>
             </li>
             <li>
-              <a href="/about">About Us</a>
+              <Link to="/about">About Us</Link>
             </li>
             <li>
-              <a href="/contact">Contact</a>
+              <Link to="/contact">Contact</Link>
             </li>
           </ul>
         </div>
@@ -35,41 +36,42 @@ const Footer = () => {
             <a
               href="https://www.facebook.com/218286854711513"
               aria-label="Facebook"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaFacebook />
             </a>
             <a
               href="https://x.com/LiyannaLuxuryT?t=6oZenAFmVgHk7l0JZIMt_w&s=09"
               aria-label="Twitter"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaTwitter />
             </a>
             <a
               href="https://www.instagram.com/liyanna_luxury_tours/"
               aria-label="Instagram"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaInstagram />
             </a>
             <a
               href="https://www.linkedin.com/in/liyanna-luxury-tours/"
               aria-label="LinkedIn"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedin />
             </a>
             <a
               href="https://wa.me/254732266660"
-              aria-label="whatsapp"
+              aria-label="Whatsapp"
               target="_blank"
               rel="noopener noreferrer"
             >
               <FaWhatsappSquare />
-            </a>
-
-            <a
-              href="https://www.linkedin.com/in/liyanna-luxury-tours/"
-              aria-label="LinkedIn"
-            >
-              <FaLinkedin />
             </a>
           </div>
         </div>
