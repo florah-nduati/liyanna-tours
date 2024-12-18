@@ -15,26 +15,25 @@ datasource db {
 
 
 model User {
-  id       String    @id @default(uuid())  // User ID is a String, generated using UUID
+  id       String    @id @default(uuid()) 
   name     String
-  email    String    @unique               // Ensure the email is unique
-  password String
-  bookings Booking[] // One-to-many relationship with bookings, where a user can have multiple bookings
+  email    String    @unique               
+  bookings Booking[] 
 
-  @@map("users")      // Map to the "users" table in the database
+  @@map("users")     
 }
 
 model Booking {
-  id            String   @id @default(uuid())  // Booking ID is a String, generated using UUID
-  userId        String   // Foreign key to the User's id
-  user          User     @relation(fields: [userId], references: [id]) // Defines the relation
+  id            String   @id @default(uuid())  
+  userId        String  
+  user          User     @relation(fields: [userId], references: [id]) 
   date          DateTime
   people        Int
   packageType   String
   tourType      String
   paymentOption String
-  message       String?  // Optional message field
-  createdAt     DateTime @default(now())  // Automatically set to the current time when the booking is created
+  message       String?  
+  createdAt     DateTime @default(now())  
 
-  @@map("bookings")     // Map to the "bookings" table in the database
+  @@map("bookings")     
 }
