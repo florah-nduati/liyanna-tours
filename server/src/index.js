@@ -10,19 +10,19 @@ import verifyToken from "./middleware/verifyToken.js";
 
 const app = express();
 
-// Middleware
+
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(
   cors({
-    origin: ["https://liyanna-tours.onrender.com", "https://liyanna-tour.onrender.com"], // Allow frontend and backend origins
+    origin: ["https://liyanna-tours.onrender.com", "https://liyanna-tour.onrender.com"], 
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
   })
 );
 app.use(cookieParser());
 
-// Request Logging Middleware
+
 app.use((req, res, next) => {
   console.log(`[${new Date().toISOString()}] ${req.method} ${req.url}`);
   console.log("Headers:", req.headers);
@@ -30,7 +30,12 @@ app.use((req, res, next) => {
   next();
 });
 
-// Health Check Endpoint
+
+app.get("/", (req, res) => {
+  res.status(200).send("Welcome to the Liyanna Luxury Tours API!");
+});
+
+
 app.get("/health", (req, res) => {
   res.status(200).json({
     status: "OK",
@@ -38,12 +43,14 @@ app.get("/health", (req, res) => {
   });
 });
 
-// API Routes
+
 app.post("/users", validateUserInformation, addUser);
 app.post("/auth/login", loginUser);
 app.post("/booking", verifyToken, createBooking);
 
+
 app.use(errorHandler);
+
 
 const PORT = process.env.PORT || 10000;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
