@@ -17,7 +17,7 @@ app.use(
   cors({
     origin: [
       "https://liyanna-tours.onrender.com", 
-      "https://liyanna-tour.onrender.com",
+//"https://liyanna-tour.onrender.com",
     ], 
     methods: ["GET", "POST", "PATCH", "PUT", "DELETE"],
     credentials: true,
