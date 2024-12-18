@@ -1,7 +1,7 @@
 import jwt from "jsonwebtoken";
 
 export const verifyToken = (req, res, next) => {
-  const token = req.cookies.authToken; // Token is stored in the cookie
+  const token = req.cookies.authToken; 
   if (!token) {
     return res.status(401).json({ message: "No token provided" });
   }
@@ -10,7 +10,7 @@ export const verifyToken = (req, res, next) => {
     if (err) {
       return res.status(401).json({ message: "Invalid token" });
     }
-    req.userId = decoded.userId; // Attach user ID from the token to the request
+    req.userId = decoded.userId; 
     next();
   });
 };
