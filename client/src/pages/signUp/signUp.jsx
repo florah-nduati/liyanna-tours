@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useMutation } from "react-query";
-import { Link, useNavigate } from "react-router-dom"; // Import Link
+import { Link, useNavigate } from "react-router-dom";
 import "./signUp.css";
 import apiBase from "../../utils/api";
 
@@ -57,50 +57,53 @@ function SignUp() {
   }
 
   return (
-    <div className="sign-up">
-      <form className="signup-form" onSubmit={handleSubmit}>
-        <h2>New here? Sign up to create a new account</h2>
+    <div className="desert-escape">
+      <form className="cosmic-form" onSubmit={handleSubmit}>
+        <h2 className="nebula-heading">Welcome to the Adventure Club!</h2>
 
-        <label htmlFor="name" className="label">
-          name
+        <label htmlFor="name" className="galactic-label">
+          Your Awesome Name
         </label>
         <input
           type="text"
           id="name"
           name="name"
-          placeholder="name"
+          placeholder="Enter your name"
           value={name}
           onChange={(e) => setName(e.target.value)}
+          className="stardust-input"
           required
         />
 
-        <label htmlFor="email" className="label">
-          Email address
+        <label htmlFor="email" className="galactic-label">
+          Email Address
         </label>
         <input
           type="email"
           id="email"
           name="email"
-          placeholder="Enter your email address"
+          placeholder="Enter your email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
+          className="stardust-input"
           required
         />
 
-        <label htmlFor="enter-password" className="label">
+        <label htmlFor="enter-password" className="galactic-label">
           Password
         </label>
         <input
           type="password"
           id="enter-password"
           name="password"
-          placeholder="Enter your password"
+          placeholder="Create a password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          className="stardust-input"
           required
         />
 
-        <label htmlFor="confirm-password" className="label">
+        <label htmlFor="confirm-password" className="galactic-label">
           Confirm Password
         </label>
         <input
@@ -110,16 +113,16 @@ function SignUp() {
           placeholder="Confirm your password"
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
+          className="stardust-input"
           required
         />
 
-        <button type="submit" id="signUpBtn" disabled={isLoading}>
-          {isLoading ? "loading.." : "sign up"}
+        <button type="submit" id="signUpBtn" className="supernova-button" disabled={isLoading}>
+          {isLoading ? "Launching..." : "Sign Up"}
         </button>
 
         <p
-          className="message"
-          id="message"
+          className="cosmic-message"
           style={{
             color: formError && formError.includes("Error") ? "red" : "green",
           }}
@@ -127,8 +130,8 @@ function SignUp() {
           {formError}
         </p>
 
-        <p className="signup-prompt">
-          Already have an account? <Link to="/login">Log in</Link>
+        <p className="orbit-link">
+          Already a member? <Link to="/login" className="galaxy-link">Log in</Link>
         </p>
       </form>
     </div>

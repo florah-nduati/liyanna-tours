@@ -1,142 +1,132 @@
-/* Center the sign-up form */
-.sign-up {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)),
-    url(../../assets/desert.jpg);
-  background-size: cover;
-  background-position: left;
+
+.desert-escape {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.7)), 
+    url(../../assets/desert.jpg) no-repeat center center/cover;
+  height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
 }
 
-.signup-form {
-  padding: 40px 50px;
-  border-radius: 20px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9);
-  width: 100%;
+
+.cosmic-form {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  width: 90%;
   max-width: 400px;
-  margin: 80px auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-  background-color: white;
+  animation: slide-down 0.6s ease-in-out;
 }
 
-/* Heading Style */
-h2 {
-  font-size: 10px;
-  color: black;
-  margin-bottom: 25px;
-  font-weight: 700;
+@keyframes slide-down {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.nebula-heading {
   text-align: center;
-}
-
-.label {
-  font-size: 14px;
-  color: #7f5aff;
-  width: 100%;
-  margin-bottom: 10px;
-}
-
-.signup-form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-}
-
-.input-group {
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 20px;
-  width: 100%;
-}
-
-.input-group label {
-  font-size: 14px;
-  color: #7f5aff;
-  font-weight: 500;
-}
-
-
-.input-group input {
-  padding: 15px;
-  border-radius: 30px;
-  border: 1px solid #ddd;
-  font-size: 16px;
+  font-size: 24px;
   color: #333;
-  background-color: #f9f9f9;
-  transition: all 0.3s ease;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.input-group input:focus {
-  outline: none;
-  border-color: #7f5aff;
-  box-shadow: 0 4px 10px rgba(127, 90, 255, 0.4);
-}
-
-.input-group input::placeholder {
-  color: #bbb;
-}
-
-.input-group input:focus::placeholder {
-  color: transparent;
-}
-
-
-button {
-  padding: 16px 30px;
-  background-color: #7f5aff;
-  color: white;
-  font-size: 18px;
+  margin-bottom: 1.5rem;
   font-weight: bold;
+}
+
+
+.galactic-label {
+  display: block;
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+
+.stardust-input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ff9f1c;
+  border-radius: 10px;
+  outline: none;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 1.5rem;
+}
+
+.stardust-input:focus {
+  border: 2px solid #ff4040;
+  box-shadow: 0 0 8px rgba(255, 64, 64, 0.5);
+}
+
+
+.supernova-button {
+  width: 100%;
+  padding: 12px;
+  background: #ff4040;
+  color: #fff;
   border: none;
-  border-radius: 30px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: bold;
   cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    transform 0.2s ease;
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
-button:hover {
-  background-color: #6b47e1;
-  transform: translateY(-2px);
-}
-
-button:disabled {
-  background-color: #d3b8ff;
+.supernova-button:disabled {
+  background: #ffb3b3;
   cursor: not-allowed;
 }
 
+.supernova-button:hover:not(:disabled) {
+  background: #d93838;
+  transform: scale(1.05);
+}
 
-.message {
+
+.cosmic-message {
+  text-align: center;
   font-size: 14px;
-  margin-top: 20px;
+  margin: 1rem 0;
+}
+
+
+.orbit-link {
   text-align: center;
 }
 
-.message.red {
-  color: red;
-}
-
-.message.green {
-  color: green;
-}
-
-.signup-prompt {
-  text-align: center;
-  margin-top: 20px;
-  font-size: 14px;
-}
-
-.signup-prompt a {
-  color: #7f5aff;
-  font-weight: bold;
+.galaxy-link {
+  color: #ff4040;
   text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
 }
 
-.signup-prompt a:hover {
-  text-decoration: underline;
+.galaxy-link:hover {
+  color: #d93838;
+}
+
+
+@media (max-width: 768px) {
+  .cosmic-form {
+    padding: 1.5rem;
+  }
+
+  .nebula-heading {
+    font-size: 20px;
+  }
+
+  .stardust-input {
+    padding: 8px;
+  }
+
+  .supernova-button {
+    padding: 10px;
+    font-size: 14px;
+  }
 }

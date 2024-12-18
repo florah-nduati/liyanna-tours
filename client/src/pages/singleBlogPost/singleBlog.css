@@ -2,12 +2,12 @@
 .blog-post-page {
   padding: 3rem;
   max-width: 900px;
-  margin: 0 auto;
+  margin: 3rem auto;
   font-family: "Roboto", sans-serif;
   color: #333;
   background-color: #f7f7f7;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
 }
 
 .blog-header {
@@ -27,7 +27,7 @@
   height: 500px;
   object-fit: cover;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.9);
   margin-bottom: 1.5rem;
 }
 
