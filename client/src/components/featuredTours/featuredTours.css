@@ -24,6 +24,7 @@
 
 .tour-card {
   border-radius: 8px;
+  background-color: white;
   width: 300px; 
   padding: 1rem;
   text-align: center;
