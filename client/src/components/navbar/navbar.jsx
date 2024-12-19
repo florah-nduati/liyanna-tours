@@ -75,7 +75,7 @@ const Navbar = () => {
           </Link>
           <ul className="dropdown-menu">
             <li>
-              <Link to="/booking" onClick={handleBookingClick}>
+              <Link to="/booking" >
                 Booking
               </Link>
             </li>
