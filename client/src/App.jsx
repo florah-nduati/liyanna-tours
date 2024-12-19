@@ -42,13 +42,12 @@ function App() {
             <Route path="/thank-you" element={<ThankYou />} />
             <Route path="/blog/:postId" element={<SingleBlog />} />
 
-            {/* Only the booking route requires authentication */}
             <Route
               path="/booking"
               element={
-                <Protected>
+                //<Protected>
                   <Booking />
-                </Protected>
+                //</Protected>
               }
             />
           </Routes>
