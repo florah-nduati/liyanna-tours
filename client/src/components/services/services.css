@@ -31,7 +31,7 @@
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease; 
-  max-width: 700px; 
+  max-width: 500px; 
 }
 
 .service-card:hover {
@@ -41,7 +41,7 @@
 
 .service-card img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: cover;
   padding: 1px;
   border-radius: 8px;
