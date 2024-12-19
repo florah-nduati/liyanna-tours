@@ -1,4 +1,123 @@
 
+.home {
+  font-family: Arial, sans-serif;
+}
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  background: url("https://source.unsplash.com/1600x900/?luxury,travel")
+    no-repeat center center/cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero-title {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero-cta .cta-button {
+  margin: 0 0.5rem;
+}
+
+
+.key-services {
+  padding: 2rem;
+
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.service-card {
+  text-align: center;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.service-card img {
+  width: 100px;
+  height: 100px;
+}
+
+
+.featured-tours {
+  padding: 2rem;
+}
+
+.tours-carousel {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+}
+
+.tour-card {
+  min-width: 250px;
+  background: white;
+  padding: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.9);
+}
+
+.tour-card img {
+  width: 100%;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+
+
+.testimonials-section {
+  padding: 2rem;
+  background: #f4f0fc;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.testimonial {
+  font-style: italic;
+  color: #555;
+  padding: 1rem;
+  background: white;
+  border-left: 5px solid #8547e0;
+}
+
+
+.gallery-preview {
+  padding: 2rem;
+  background: #ffffff;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  gap: 1rem;
+}
+
 .whatsapp-button {
   position: fixed;
   bottom: 20px; 
