@@ -118,7 +118,7 @@ const About = () => {
           </div>
           <div className="team-member">
             <img src={image4} alt="Emily White" />
-            <h3>Emily White</h3>
+            <h3>martin Ng'ang'a</h3>
             <p>Hospitality Manager</p>
           </div>
         </div>

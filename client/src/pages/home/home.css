@@ -39,7 +39,6 @@
 
 .key-services {
   padding: 2rem;
-  background: #f4f0fc;
 }
 
 .services-grid {
@@ -50,7 +49,6 @@
 
 .service-card {
   text-align: center;
-  background: white;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -64,7 +62,6 @@
 
 .featured-tours {
   padding: 2rem;
-  background: #e4d9f6;
 }
 
 .tours-carousel {
@@ -75,7 +72,6 @@
 
 .tour-card {
   min-width: 250px;
-  background: white;
   padding: 1rem;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,7 +86,6 @@
 
 .testimonials-section {
   padding: 2rem;
-  background: #f4f0fc;
 }
 
 .testimonials {
@@ -103,14 +98,12 @@
   font-style: italic;
   color: #555;
   padding: 1rem;
-  background: white;
   border-left: 5px solid #8547e0;
 }
 
 
 .gallery-preview {
   padding: 2rem;
-  background: #ffffff;
 }
 
 .gallery-grid {
