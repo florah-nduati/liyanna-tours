@@ -16,8 +16,15 @@ const Navbar = () => {
     navigate("/login");
   };
 
+  const handleBookingClick = () => {
+    if (!isAuthenticated) {
+      navigate("/login");
+    }
+  };
+
   return (
     <nav className="navbar">
+      
       <div className="navbar-logo">
         <Link to="/">
           <img src={logo} alt="Liyanna Luxury Tours Logo" />
@@ -61,14 +68,16 @@ const Navbar = () => {
             </li>
           </>
         )}
-
+ 
         <li className="dropdown">
           <Link to="#" className="dropdown-btn">
             More
           </Link>
           <ul className="dropdown-menu">
             <li>
-              <Link to="/booking">Booking</Link>
+              <Link to="/booking" onClick={handleBookingClick}>
+                Booking
+              </Link>
             </li>
             <li>
               <Link to="/faqs">FAQs</Link>
@@ -87,7 +96,7 @@ const Navbar = () => {
               <Link to="/login"></Link>
             </li>
             <li>
-              <Link to="/sign-up"></Link>
+              <Link to="/sign-up">sign up</Link>
             </li>
           </>
         )}
