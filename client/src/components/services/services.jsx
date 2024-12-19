@@ -1,5 +1,4 @@
 import React from "react";
-import "./services.css";
 import image1 from "../../assets/hotel.jpg";
 import image2 from "../../assets/airport.jpg";
 import image3 from "../../assets/yatch.jpg";
@@ -13,6 +12,7 @@ import image10 from "../../assets/corporate.jpg";
 import image11 from "../../assets/adventure.jpg";
 import image12 from "../../assets/customized.jpg";
 import image13 from "../../assets/ticketing.jpg";
+import "./services.css";
 
 const KeyServices = () => {
   const services = [
