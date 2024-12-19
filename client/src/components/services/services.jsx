@@ -8,6 +8,11 @@ import image5 from "../../assets/car.jpg";
 import image6 from "../../assets/security.jpg";
 import image7 from "../../assets/planes.jpg";
 import image8 from "../../assets/tours.jpg";
+import image9 from "../../assets/bush.jpg"; 
+import image10 from "../../assets/corporate.jpg";
+import image11 from "../../assets/adventure.jpg";
+import image12 from "../../assets/customized.jpg";
+import image13 from "../../assets/ticketing.jpg";
 
 const KeyServices = () => {
   const services = [
@@ -58,6 +63,36 @@ const KeyServices = () => {
       title: "Customized Package Tours",
       description: "Tailored tours to create your perfect travel experience.",
       image: image8,
+    },
+    {
+      id: 9,
+      title: "Bush Safaris",
+      description: "Experience the thrill of the wilderness with our bush safaris.",
+      image: image9,
+    },
+    {
+      id: 10,
+      title: "Corporate Safaris",
+      description: "Elevate corporate travel with our luxurious safari packages.",
+      image: image10,
+    },
+    {
+      id: 11,
+      title: "Adventure Activities",
+      description: "Get your adrenaline pumping with our exciting adventures.",
+      image: image11,
+    },
+    {
+      id: 12,
+      title: "Customized Itineraries",
+      description: "Personalized travel plans for your unique preferences.",
+      image: image12,
+    },
+    {
+      id: 13,
+      title: "Air Ticketing",
+      description: "Effortless air ticketing for a hassle-free travel experience.",
+      image: image13,
     },
   ];
 

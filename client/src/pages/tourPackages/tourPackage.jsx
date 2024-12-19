@@ -369,26 +369,26 @@ const TourPackages = () => {
     <div className="tour-packages">
       <h1 className="page-title">Our Exclusive Tour Packages</h1>
       <Carousel
-        swipeable={true}
-        draggable={true}
-        showDots={true}
+        swipeable
+        draggable
+        showDots
         responsive={responsive}
-        ssr={true} 
-        infinite={true}
-        autoPlay={true}
+        ssr
+        infinite
+        autoPlay
         autoPlaySpeed={3000}
-        keyBoardControl={true}
+        keyBoardControl
         customTransition="all .5"
         transitionDuration={500}
         containerClass="carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
-        deviceType={"desktop"}
         dotListClass="custom-dot-list-style"
         itemClass="carousel-item-padding-40-px"
       >
         {packages.map((pkg) => (
           <div key={pkg.id} className="package-card">
             <img src={pkg.image} alt={pkg.title} className="package-image" />
+            <div className="price-tag">Ksh 3000</div>
             <h2 className="package-title">{pkg.title}</h2>
             <p className="package-description">{pkg.description}</p>
             <ul className="features-list">

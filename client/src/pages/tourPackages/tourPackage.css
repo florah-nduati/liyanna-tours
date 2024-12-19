@@ -50,6 +50,20 @@
   transition: transform 0.3s ease-in-out;
 }
 
+.price-tag {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #f31212; 
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
 .package-title {
   font-size: 1.6em;
   color: #333;

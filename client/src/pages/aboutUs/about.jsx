@@ -4,6 +4,7 @@ import image1 from "../../assets/value.jpg";
 import image2 from "../../assets/vision.jpg";
 import image3 from "../../assets/mission.jpg";
 import about from "../../assets/about.mp4";
+import image4 from "../../assets/martin.jpg";
 import "./about.css";
 
 const About = () => {
@@ -106,17 +107,17 @@ const About = () => {
         <h2>Meet the Team</h2>
         <div className="team">
           <div className="team-member">
-            <img src={image1} alt="Jane Smith" />
-            <h3>Jane Smith</h3>
+            <img src={image4} alt="Jane Smith" />
+            <h3>martin Ng'ang'a</h3>
             <p>Founder & CEO</p>
           </div>
           <div className="team-member">
-            <img src={image1} alt="John Doe" />
-            <h3>John Doe</h3>
+            <img src={image4} alt="John Doe" />
+            <h3>martin Ng'ang'a</h3>
             <p>Travel Consultant</p>
           </div>
           <div className="team-member">
-            <img src={image1} alt="Emily White" />
+            <img src={image4} alt="Emily White" />
             <h3>Emily White</h3>
             <p>Hospitality Manager</p>
           </div>
