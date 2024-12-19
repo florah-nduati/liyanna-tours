@@ -13,6 +13,7 @@
 .cosmic-form {
   background: rgba(255, 255, 255, 0.9);
   padding: 2rem;
+  margin: 2rem auto;
   border-radius: 15px;
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
   width: 90%;
