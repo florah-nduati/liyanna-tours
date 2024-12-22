@@ -21,7 +21,7 @@ export const addUser = async (req, res) => {
 
     res.status(201).json(newUser);
   } catch (e) {
-    console.error("Error adding user:", e); 
-    res.status(500).json({ message: "something went wrong", error: e.message }); 
+    console.error("Error adding user:", e);
+    res.status(500).json({ message: "something went wrong", error: e.message });
   }
 };
