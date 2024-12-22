@@ -27,6 +27,7 @@
     "node-mailjet": "^6.0.6",
     "nodemailer": "^6.9.16",
     "nodemon": "^3.1.7",
+    "sitemap": "^8.0.0",
     "zustand": "^5.0.2"
   },
   "devDependencies": {
